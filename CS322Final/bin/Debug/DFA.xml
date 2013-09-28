@@ -1,0 +1,93 @@
+<?xml version='1.0' ?>
+
+<!-- XML Definition of a DFA by Matt Hintzke -->
+<DFA>
+	<!-- This defines the all used states in the DFA -->
+	<STATES-SET>
+		<STATE>q0</STATE>
+		<STATE>q1</STATE>
+		<STATE>q2</STATE>
+		<STATE>q3</STATE>
+	</STATES-SET>
+
+	<!-- This defines the alphabet -->
+	<ALPHABET>
+		<CHARACTER>1</CHARACTER>
+		<CHARACTER>0</CHARACTER>
+	</ALPHABET>
+
+	<!-- This defines all transitions -->
+	<TRANSITION-SET>
+
+		<!-- A transition block represents all transitions that can be made from a single initial state -->
+		<TRANSITION-BLOCK>
+			<!-- Hence, this block defines all transitions from the INIT-STATE q0 to any other states -->
+			<INIT-STATE>q0</INIT-STATE>
+			<!-- A transition represents any ACCEPTOR character from the INIT-STATE to some FINAL state -->
+			<TRANSITION>
+				<ACCEPTOR>1</ACCEPTOR>
+				<FINAL>q1</FINAL>
+			</TRANSITION>
+
+			<TRANSITION>
+				<ACCEPTOR>0</ACCEPTOR>
+				<FINAL>q2</FINAL>
+			</TRANSITION>
+		</TRANSITION-BLOCK>
+
+
+
+		<TRANSITION-BLOCK>
+			<INIT-STATE>q1</INIT-STATE>
+			<TRANSITION>
+				<ACCEPTOR>1</ACCEPTOR>
+				<FINAL>q0</FINAL>
+			</TRANSITION>
+
+			<TRANSITION>
+				<ACCEPTOR>0</ACCEPTOR>
+				<FINAL>q3</FINAL>
+			</TRANSITION>
+		</TRANSITION-BLOCK>
+
+
+		<TRANSITION-BLOCK>
+			<INIT-STATE>q2</INIT-STATE>
+			<TRANSITION>
+				<ACCEPTOR>1</ACCEPTOR>
+				<FINAL>q3</FINAL>
+			</TRANSITION>
+
+			<TRANSITION>
+				<ACCEPTOR>0</ACCEPTOR>
+				<FINAL>q0</FINAL>
+			</TRANSITION>
+		</TRANSITION-BLOCK>
+
+
+
+		<TRANSITION-BLOCK>
+			<INIT-STATE>q3</INIT-STATE>
+			<TRANSITION>
+				<ACCEPTOR>1</ACCEPTOR>
+				<FINAL>q2</FINAL>
+			</TRANSITION>
+
+			<TRANSITION>
+				<ACCEPTOR>0</ACCEPTOR>
+				<FINAL>q1</FINAL>
+			</TRANSITION>
+		</TRANSITION-BLOCK>
+	</TRANSITION-SET>
+
+
+	<!-- This defines all starting states -->
+	<STARTING-SET>
+		<STATE>q0</STATE>
+	</STARTING-SET>
+
+	<!-- This defines all final states -->
+	<FINAL-SET>
+		<STATE>q3</STATE>
+	</FINAL-SET>
+</DFA>

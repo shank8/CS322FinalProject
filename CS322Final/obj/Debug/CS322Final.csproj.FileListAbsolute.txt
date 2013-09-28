@@ -1,0 +1,6 @@
+c:\users\matt\documents\visual studio 2012\Projects\CS322Final\CS322Final\bin\Debug\CS322Final.exe.config
+c:\users\matt\documents\visual studio 2012\Projects\CS322Final\CS322Final\bin\Debug\CS322Final.exe
+c:\users\matt\documents\visual studio 2012\Projects\CS322Final\CS322Final\bin\Debug\CS322Final.pdb
+c:\users\matt\documents\visual studio 2012\Projects\CS322Final\CS322Final\obj\Debug\CS322Final.csprojResolveAssemblyReference.cache
+c:\users\matt\documents\visual studio 2012\Projects\CS322Final\CS322Final\obj\Debug\CS322Final.exe
+c:\users\matt\documents\visual studio 2012\Projects\CS322Final\CS322Final\obj\Debug\CS322Final.pdb
